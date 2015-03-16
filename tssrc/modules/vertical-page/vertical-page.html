@@ -1,0 +1,20 @@
+<div class="row">
+    <h1>Vertical page</h1>
+</div>
+<div class="row">
+    <div class="col-xs-6 content">
+        <ul class="list-group" ng-repeat="item in data">
+
+            <li class="list-group-item">
+                <span>{{item.user.name}}</span>
+                <p>{{item.text}}</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="col-xs-6 content">
+        Content
+        <div ui-view="top"></div>
+        <div ui-view="bottom"></div>
+    </div>
+</div>
