@@ -1,21 +1,8 @@
 /// <reference path="vertical-page-module.ts" />
-/// <reference path="../../restangular.d.ts" />
-
+/// <reference path="vertical-page-service.ts" />
 
 interface ITweetScope extends ng.IScope{
     data : any[]
-}
-
-class verticalPageService {
-    public static $inject = ['Restangular'];
-    constructor(
-        private Restangular: restangular.IService
-    ){}
-
-    getTweets (): restangular.IPromise<any> {
-        return this.Restangular.one('tweets','response.json').get();
-    }
-
 }
 
 class verticalPageController{

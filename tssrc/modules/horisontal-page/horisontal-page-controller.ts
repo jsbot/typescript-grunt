@@ -1,4 +1,4 @@
-/// <reference path="../../angular.d.ts"/>
+/// <reference path="../../vendor/angular.d.ts"/>
 
 
 class horisontalPageController {

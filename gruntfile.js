@@ -1,11 +1,9 @@
-fs = require('fs')
-
 module.exports = function (grunt) {
 
 	grunt.config.init({
 		pkg: grunt.file.readJSON('package.json'),
 		clean: {
-			main:['tssrc/www'],
+			main:['WWW'],
 			ts: [
 				'WWW/app.ts',
 				'WWW/**/*.ts',
@@ -76,10 +74,13 @@ function readLibs(){
 		var content = grunt.file.read('tssrc/index.html') ;
 		var result = content.replace(/<body ng-app="app">/g, '<body ng-app="app">\n <!-- libs --> \n'+app.libsFiles +'\n  <!-- application --> \n'+app.appFiles);
 		grunt.file.write('WWW/index.html', result);
+
+		grunt.log.ok('Index file hs been created');
+
 	});
 
 
 
-   grunt.registerTask('build', ['clean','copy','ts','clean:ts', 'createIndex']);
+   grunt.registerTask('build', ['clean:main','copy','ts','clean:ts', 'createIndex']);
 
 };

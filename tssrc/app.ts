@@ -1,6 +1,6 @@
-/// <reference path="angular.d.ts"/>
-/// <reference path="angular-ui-router.d.ts"/>
-/// <reference path="restangular.d.ts"/>
+/// <reference path="vendor/angular.d.ts"/>
+/// <reference path="vendor/angular-ui-router.d.ts"/>
+/// <reference path="vendor/restangular.d.ts"/>
 /// <reference path="components/nav/navigation.ts"/>
 
 declare module app{}

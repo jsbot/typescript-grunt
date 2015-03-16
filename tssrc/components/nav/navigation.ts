@@ -1,4 +1,4 @@
-/// <reference path="../../angular.d.ts"/>
+/// <reference path="../../vendor/angular.d.ts"/>
 /// <reference path="../../app.ts"/>
 /// <reference path="navigation-controller.ts"/>
 

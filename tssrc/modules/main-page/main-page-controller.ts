@@ -1,5 +1,5 @@
 /// <reference path="main-page-module.ts" />
-/// <reference path="../../angular-local-storage.d.ts" />
+/// <reference path="../../vendor/angular-local-storage.d.ts" />
 
 interface iTodoItem{
     [index: string]: string;

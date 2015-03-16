@@ -1,4 +1,4 @@
-/// <reference path="../../angular.d.ts"/>
+/// <reference path="../../vendor/angular.d.ts"/>
 
 interface INavScope extends ng.IScope{
     menu : any[]

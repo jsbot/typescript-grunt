@@ -1,4 +1,4 @@
-/// <reference path="../../angular.d.ts"/>
+/// <reference path="../../vendor/angular.d.ts"/>
 /// <reference path="main-page-controller.ts"/>
 
 module mainPage{
